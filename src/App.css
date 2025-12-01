@@ -1,38 +1,636 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app-container{
+  background-color: rgb(255, 255, 255);
   min-height: 100vh;
+}
+/* PORTADA */
+.portada-container {
+  height: 100vh;
+  width: 100%;
+background: #7B4AE2;
+background: linear-gradient(180deg,rgba(123, 74, 226, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  align-items: center;
+}
+.portada-texto {
   display: flex;
-  flex-direction: column;
+  position: relative;
+  font-family: "Dela Gothic One";
+  font-size: 9rem;   
+  text-align: center;
+  vertical-align: bottom;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  top: 30%;
+  margin: 0 auto;
+  letter-spacing: 4px;
+ 
+}
+.portada-subtitulo{
+  position: relative;
+  font-size: 2rem;
+  font-family: "Poppins";
+  color: white;
+  text-align: center;
+  top: 24%;
+}
+.franja-verde {
+  width: 100vw;
+  height: 70px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  background: #28D84A;
+  padding: 0;
+  font-family: "Poppins";
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: 5px;
+}
+
+/* === PRESENTACIÓN — LAYOUT PDF === */
+
+.presentacion-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  padding: 120px 60px;
+  background: black;
+  min-height: 80vh;
+}
+.circulo-logo {
+  width: 500px;
+  height: 500px;
+  background: #7B4AE2;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  overflow: visible;
+}
+.logo-dentro-circulo {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+.iconos-contacto {
+  position: absolute;
+  top: 100%;       
+  left: 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;       
+  z-index: 10;
+}
+.contacto-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;      
+}
+.iconos-contacto img {
+  width: 45px;
+  height: auto;
+  object-fit: contain;
+}
+.contacto-item span {
+  font-family: "Poppins";
+  font-size: 1.25rem;
   color: white;
+  letter-spacing: 0.5px;
+}
+.texto-presentacion {
+  margin-top: 40px;
+  margin-left: 170px;
+  padding-left: 40px;
+  max-width: 600px;
+}
+/* SOBRE MÍ */
+.sobre-mi h1 {
+  font-family: "Dela Gothic One";
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #7B4AE2;
+  margin-bottom: 25px;
+}
+.sobre-mi p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: white;
+  margin-bottom: 35px;
+}
+/* ESTUDIOS */
+.estudios h1 {
+  font-family: "Dela Gothic One";
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #7B4AE2;
+  margin-bottom: 25px;
+}
+.estudios p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: white;
+  margin-bottom: 35px;
+}
+/* MI VISIÓN */
+.mi-vision h1 {
+  font-family: "Dela Gothic One";
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #7B4AE2;
+  margin-bottom: 25px;
+}
+.mi-vision p {
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/*MAMALLUCA*/
+
+.mamalluca-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.packaging-titulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 7.5rem;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+.mamalluca-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 50px;
+}
+.mamalluca-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  font-size: 5rem;
+  color: #28D84A;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.mamalluca-subtitulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.mamalluca-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.mamalluca-imagen-principal {
+ align-self: start;
+}
+.mamalluca-imagen-principal img {
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+  object-fit: cover;
+}
+.mamalluca-galeria {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+.mamalluca-galeria img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* PULPAPOP */
+
+.pulpapop-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.pulpapop-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;          
+  border-radius: 30px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.pulpapop-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  color: #32c14f;
+  font-size: 5.5rem;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.pulpapop-subtitulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.pulpapop-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.pulpapop-imagen-principal img {
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+}
+.pulpapop-packaging {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.pulpapop-packaging img {
+  width: 70%;
+  border-radius: 20px;
+  display: block;
+}
+
+/* GRAVITY FALLS */
+
+.gravity-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.ilustraciones-titulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 7.5rem;
+  margin-left: 60px;
+  margin-bottom: 40px;
+}
+.gravity-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 50px;
+}
+.gravity-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  color: #28D84A;
+  font-size: 5.5rem;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.gravity-subtitulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.gravity-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.gravity-dipper img {
+  width: 50%;
+  display: block;
+  object-fit: contain;
+  margin: auto;
+}
+.gravity-galeria {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 40px;
+}
+.gravity-galeria img {
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* SOMBRA VIVA */
+
+.sombra-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.sombra-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.sombra-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  color: #28D84A;
+  font-size: 5.5rem;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+.sombra-subtitulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.sombra-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.sombra-boceto {
+  text-align: center;
+}
+.sombra-mini-titulo {
+  font-family: "Dela Gothic One";
+  font-size: 1.8rem;
+  color: #7B4AE2;
+  margin-bottom: 15px;
+}
+.sombra-boceto img {
+  width: 90%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.sombra-final {
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-top: 20px;
+}
+.sombra-final img {
+  width: 80%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+/* TRILOGÍA DE PAISAJES */
+
+.trilogia-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.trilogia-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.trilogia-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  color: #28D84A;
+  font-size: 5.5rem;
+   margin-bottom: -20px;
+  margin-top: -20px;
+}
+.trilogia-subtitulo {
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.trilogia-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.trilogia-imagen {
+  text-align: center;
+}
+.trilogia-imagen img {
+  width: 95%;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+.trilogia-imagen-centro {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+.trilogia-imagen-centro img {
+  width: 85%;
+  border-radius: 25px;
+  object-fit: cover;
+  margin: 40px auto 10px;
+}
+.trilogia-mini-titulo {
+  font-family: "Dela Gothic One";
+  font-size: 1.8rem;
+  color: #28D84A;
+  margin-top: 10px;
+}
+
+/* CREACIÓN DE MONÓLOGO */
+
+.mono-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.mono-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.mono-titulo-seccion {
+  width: 85%;
+  margin: 0 auto 20px auto;
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 7.5rem;
+}
+.mono-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  color: #28D84A;
+  font-size: 5.5rem;
+   margin-bottom: -20px;
+  margin-top: -20px;
+}
+.mono-subtitulo {
+  font-family: "Dela Gothic One";
+  font-size: 2.2rem;
+  color: #7B4AE2;
+  margin-bottom: 10px;
+}
+.mono-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.mono-imagen-principal {
+  text-align: center;
+}
+.mono-imagen-principal img {
+  width: 90%;
+  object-fit: contain;
+  display: block;
+}
+.mono-mockup {
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-top: 40px;
+}
+.mono-mockup img {
+  width: 90%;
+  border-radius: 20px;
+}
+.mono-galeria {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.mono-galeria img {
+  width: 90%;
+  border-radius: 20px;
+  display: block;
+}
+
+/* ROTULO TIPOGRÁFICO */
+
+.rotulo-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.rotulo-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.rotulo-titulo {
+  grid-column: 1 / 3;
+  font-family: "Dela Gothic One";
+  color: #28D84A;
+  font-size: 5.5rem;
+  margin-bottom: -20px;
+  margin-top: -20px;
+}
+.rotulo-subtitulo {
+  font-family: "Dela Gothic One";
+  font-size: 2.2rem;
+  color: #7B4AE2;
+  margin-bottom: 10px;
+}
+.rotulo-textos {
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+.rotulo-imagen-principal img {
+  width: 95%;
+  display: block;
+  margin: 1 auto;
+  object-fit: contain;
+}
+.rotulo-mockup {
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-top: 10px;
+}
+.rotulo-mockup img {
+  width: 60%;
+  border-radius: 20px;
+}
+.rotulo-bocetos {
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-top: 20px;
+}
+.rotulo-bocetos img {
+  width: 85%;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* FOTOGRAFÍA */
+
+.foto-container {
+  width: 100%;
+  background: black;
+  padding: 80px 0;
+}
+.foto-titulo-seccion {
+  width: 85%;
+  margin: 0 auto 20px auto;
+  font-family: "Dela Gothic One";
+  color: #7B4AE2;
+  font-size: 7.5rem;
+}
+.foto-card {
+  background: white;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px;
+  border-radius: 30px;
+}
+.foto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; 
+  justify-content: center;
+}
+.foto-grid img {
+  width: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+  display: block;
 }

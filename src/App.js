@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Portada from './Portada';
+import Presentacion from "./Presentacion";
+import Mamalluca from "./Mamalluca";
+import Pulpapop from "./Pulpapop";
+import GravityFalls from "./GravityFalls";
+import SombraViva from './SombraViva';
+import TrilogiaPaisajes from './TrilogiaPaisajes';
+import CreacionMonologo from './CreacionMonologo';
+import RotuloTipografico from './RotuloTipografico';
+import Fotografia from './fotografia';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Portada />
+      <Presentacion />
+      <Mamalluca />
+      <Pulpapop />
+      <GravityFalls />
+      <SombraViva />
+      <TrilogiaPaisajes />
+      <CreacionMonologo />
+      <RotuloTipografico />
+      <Fotografia />
     </div>
   );
 }
