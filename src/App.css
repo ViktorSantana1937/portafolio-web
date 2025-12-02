@@ -52,7 +52,7 @@ background: linear-gradient(180deg,rgba(123, 74, 226, 1) 0%, rgba(0, 0, 0, 1) 10
   letter-spacing: 5px;
 }
 
-/* === PRESENTACIÓN — LAYOUT PDF === */
+/* PRESENTACIÓN */
 
 .presentacion-container {
   display: flex;
